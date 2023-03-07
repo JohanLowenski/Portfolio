@@ -3,6 +3,9 @@ import Fisheye from "../../Assets/Fisheye.png";
 import Hrnet from "../../Assets/Hrnet.png";
 import GameOn from "../../Assets/Gameon.png";
 import Booki from "../../Assets/Booki.png";
+import OhMyFood from "../../Assets/Ohmyfood.png";
+import Plats from "../../Assets/LesPetitsPlats.png";
+import Kasa from "../../Assets/Kasa.png";
 
 // interface Projects {
 // 	name?: string;
@@ -27,16 +30,37 @@ const projects = [
 	{
 		id: 3,
 		name: "Game On",
-		image:GameOn,
+		image: GameOn,
 		description: "Site d'inscription à des tournois de jeux vidéos",
 		https: "https://gameon-website.lowenski-johan.fr/",
 	},
 	{
 		id: 4,
 		name: "Booki",
-		image:Booki,
+		image: Booki,
 		description: "Site de réservation d'hotels",
 		https: "https://booki.lowenski-johan.fr/",
+	},
+	{
+		id: 5,
+		name: "Ohmyfood",
+		image: OhMyFood,
+		description: "Site de réservation au restaurant",
+		https: "https://ohmyfood.lowenski-johan.fr/",
+	},
+	{
+		id: 6,
+		name: "les-petits-plats",
+		image: Plats,
+		description: "Site de réservation d'hotels",
+		https: "https://les-petits-plats.lowenski-johan.fr/",
+	},
+	{
+		id: 7,
+		name: "Kasa",
+		image: Kasa,
+		description: "Site de réservation d'hotels",
+		https: "https://kasa.lowenski-johan.fr/",
 	},
 ];
 
