@@ -6,6 +6,7 @@ import Booki from "../../Assets/Booki.png";
 import OhMyFood from "../../Assets/Ohmyfood.png";
 import Plats from "../../Assets/LesPetitsPlats.png";
 import Kasa from "../../Assets/Kasa.png";
+import Billed from "../../Assets/Billed.png";
 
 // interface Projects {
 // 	name?: string;
@@ -38,51 +39,58 @@ const projects = [
 		id: 4,
 		name: "Booki",
 		image: Booki,
-		description: "Site de réservation d'hotels",
+		description: "Site de réservation d'hotels Marseillais",
 		https: "https://booki.lowenski-johan.fr/",
 	},
 	{
 		id: 5,
 		name: "Ohmyfood",
 		image: OhMyFood,
-		description: "Site de réservation au restaurant",
+		description: "Site de réservation dans des restaurants",
 		https: "https://ohmyfood.lowenski-johan.fr/",
 	},
 	{
 		id: 6,
 		name: "les-petits-plats",
 		image: Plats,
-		description: "Site de réservation d'hotels",
+		description: "Site de recettes de cuisine",
 		https: "https://les-petits-plats.lowenski-johan.fr/",
 	},
 	{
 		id: 7,
 		name: "Kasa",
 		image: Kasa,
-		description: "Site de réservation d'hotels",
+		description: "Site de réservation d'hotels Parisiens",
 		https: "https://kasa.lowenski-johan.fr/",
+	},
+	{
+		id: 8,
+		name: "Billed",
+		image: Billed,
+		description: "Site de gestion d’employés",
+		https: "https://billed-app.lowenski-johan.fr/",
 	},
 ];
 
 const Section = () => {
 	return (
-		<ul className="divide-y divide-gray-200">
+		<figure className="divide-y divide-gray-200 font-montserrat">
 			{projects.map((project) => (
-				<li key={project.id} className="flex py-4">
+				<figcaption key={project.id} className="flex py-4">
 					<a href={project.https} target="_blank" rel="noopener noreferrer">
 						<img
-							className="w-10 h-10 rounded-full"
+							className="object-cover w-10 h-10 rounded-full md:h-auto md:w-20"
 							src={project.image}
-							alt=""
+							alt={project.image}
 						/>
 					</a>
-					<div className="ml-3">
+					<blockquote className="ml-3">
 						<p className="text-sky-500 dark:text-sky-400">{project.name}</p>
 						<p className="text-sm text-gray-500">{project.description}</p>
-					</div>
-				</li>
+					</blockquote>
+				</figcaption>
 			))}
-		</ul>
+		</figure>
 	);
 };
 export default Section;
