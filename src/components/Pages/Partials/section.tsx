@@ -3,9 +3,9 @@ import { projects } from "../DataMapPages/projectsData";
 
 const Section = () => {
 	return (
-		<div className="flex flex-wrap my-40 text-gray-600 font-montserrat body-font">
+		<div className="flex flex-wrap my-40 text-gray-600 body-font">
 			{projects.map((project) => (
-				<div className="container px-5 py-10 mx-auto lg:w-1/3" key={project.id}>
+				<div className="container px-5 py-10 mx-auto lg:w-2/5" key={project.id}>
 					<div className="flex flex-wrap mb-2 ">
 						<div className="mb-0 lg:mb-0">
 							<h1 className="mb-2 text-2xl font-medium text-gray-900 sm:text-3xl title-font">

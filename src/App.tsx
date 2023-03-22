@@ -6,7 +6,7 @@ import Photo from "./components/Pages/Partials/photo";
 
 const App = () => {
 	return (
-		<div className="App">
+		<div className="App font-lato">
 			<Header />
 			<Photo />
 			<Section />
